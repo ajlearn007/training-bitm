@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        form {
+            border: solid 3px yellow;
+            border-radius: 5px;
+            width: 500px;
+            padding: 15px;
+            box-sizing: border-box;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+        
+        table {
+            width: 100%;
+        }
+        
+        td {
+            padding: 5px;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url("image.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+    <form action="" border="5px black">
+        <table title="Basic Information">
+            <h1 style="text-align: center;">Basic Information</h1>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" id="age"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth:</label></td>
+                <td><input type="date" id="dob"></td>
+            </tr>
+            <tr class="radio">
+                <td><label for="male">Male</label></td>
+                <td><input type="radio" id="male" name="gender"></td>
+                <td><label for="female">Female</label></td>
+                <td><input type="radio" id="female" name="gender"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="justify-content: center;">
+                    <input type="submit" style="border-radius: 80px;width:80px;background-color:green">
+                    <input type="reset" style="border-radius: 80px;width:80px;background-color:red">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
